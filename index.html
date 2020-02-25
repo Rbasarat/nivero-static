@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nivero</title>
+<!--     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+    <style>
+        body {
+            background: #1E2327;
+            font-family: Inconsolata;
+            color: white;
+            padding: 24px;
+            font-size: 24px;
+            line-height: 48px;
+        }
+
+        header {
+            margin-top: 10%;
+        }
+
+        header, article {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .text-logo {
+            display: inline-block;
+            margin-left: 4px;
+        }
+
+        a {
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0; /* fix for chrome ghost spacing */
+        }
+
+        li {
+            line-height: 32px;
+            font-size: 24px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+        }
+
+            footer li {
+                display: inline-block;
+                border-right: solid 1px;
+                padding: 0 12px;
+                line-height: 18px;
+                font-size: 18px;
+            }
+
+                footer li:last-child {
+                    border: none;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nivero</h1>
+    </header>
+
+    <article>
+        <ul>
+        	<li>Software engineer</li>
+            <li>Full stack web and mobile development</li>
+            <li ><a id="email" href="mailto:rasjaad@nivero.io">rasjaad@nivero.io</a></li>
+            <li><a href="https://nl.linkedin.com/in/rasjaad-basarat">LinkedIn</a></li>
+        </ul>
+    </article>
+
+    <footer>
+<!--         <ul>
+            <li>KVK 69027803</li>
+            <li>BTW NL174783413B01</li>
+            <li>IBAN NL35 KNAB 0256 4585 45</li>
+            <li><a href="algemenevoorwaarden.happydev.pdf">Algemene voorwaarden</a></li>
+        </ul> -->
+    </footer>
+</body>
+<script>
+    var email = document.getElementById("email");
+    const domain = location.hostname;
+    if (domain !== 'localhost'){
+        email.innerHTML = 'rasjaad@nivero.nl';
+        email.add('href', 'mailto:rasjaad@nivero.nl')
+    }
+</script>
+</html>
